@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420') center/cover fixed;
-    color: #fff;
+    background-color: gray;
 }
 
 #tekst {
@@ -17,28 +17,31 @@ body {
     color: #2a2a2a;
 }
 
-.btn {
-    background-color: #1f1f1f;
-    color: #ffb347;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 10px;
+.neon-btn {
+    padding: 15px 40px;
+    font-size: 24px;
+    color: white;
+    background: #1f1f1f;
+    border: 5px solid #ffb347;
+    border-radius: 30px;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-color: #ffb347;
+    box-shadow:
+        0 0 5px #ffb347,
+        0 0 10px #ffb347;
+    0 0 20px #00ffff;
+
 }
 
-.btn:hover {
-    background-color: #2a2a2a;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    border-color: #ffb347;
-}
+.neon-btn:hover {
+    background: #1f1f1f;
+    color: #ffb347;
+    box-shadow:
+        0 0 5px #ffb347,
+        0 0 15px #ffb347,
+        0 0 30px #ffb347,
+        0 0 40px #ffb347;
 
-.btn:active {
-    transform: scale(0.96);
 }
 
 .overlay {
